@@ -14,9 +14,14 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping("/")
+	@GetMapping
 	public String index() {
-		return "Greetings from Azure Spring Apps!";
+		return "Hello Spring Azure";
+	}
+
+	@GetMapping("/about")
+	public String about() {
+		return "We are at Azure";
 	}
 
 }
